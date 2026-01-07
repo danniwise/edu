@@ -3,6 +3,14 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+p {
+    color: #5D646A;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.6
+}
 .main {
     padding: 13px 0;
     background-color: #32404d;
@@ -44,7 +52,7 @@ span {
     line-height: 1;
     padding-left: 25px;
 }
-p {
+.main .element .rt .timer .item p {
     color: #E4E8F2;
     font-size: 13px;
     font-weight: 300;
@@ -57,6 +65,10 @@ p {
     text-decoration: none;
     color: #fff;
     margin-left: 40px;
+    transition: .3s ease-in-out;
+}
+.main .element .rt .btn:hover {
+    letter-spacing: 1px;
 }
 .main .element .rt .btn hr {
     position: absolute;
@@ -103,6 +115,9 @@ p {
     transition: all .3s ease-out 0s;
     position: relative
 }
+.hd-bottom .element .lft .menu ul>li:hover a {
+    color: #007A5C;
+}
 li {
     list-style: none;
     text-decoration: none;
@@ -129,6 +144,13 @@ li {
     border: none;
     padding-right: 5px;
 }
+.hd-bottom .element .rgt .social li a i{
+    color: #3B5998;
+    transition: all .3s ;
+}
+.hd-bottom .element .rgt .social li a i:hover {
+    transform: rotateY(117.467deg);
+}
 .background {
     background: url(../images/h1_hero1.jpg.webp);
     height: 750px;
@@ -138,9 +160,6 @@ li {
 }
 .background .element {
     padding: 200px 300px 0px 100px;
-}
-.background .element .text {
-
 }
 .background .element span {
     font-size: 24px;
@@ -183,4 +202,412 @@ li {
     border: 1px solid #fff;
     color: #fff;
     transition: .2s;
+}
+.about {
+    padding: 100px 70px;
+    background: #FCF2EB;
+}
+.about .element {
+    display: flex;
+}
+.about .element .text {
+    margin-left: 90px;
+}
+.about .element .text h2 {
+    color: #32404D;
+    font-size: 30px;
+    display: flex;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.about .element .text p {
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.about .element .text .k {
+    margin-bottom: 30px;
+}
+.about .element .text a {
+    color: #007A5C;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+.about .element .text a:hover {
+    color: #007A5C;
+    letter-spacing: 1px;
+}
+.blog {
+    padding: 100px 70px;
+}
+.blog .word {
+    text-align: center;
+}
+.blog .word {
+    margin-bottom: 40px;
+}    
+.blog .word h2 {
+    color: #32404D;
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.blog .word p {
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.blog .element {
+    display: flex;
+}
+.blog .element .card {
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #D9E2E9;
+    margin-right: 20px;
+    transition: all .4s ease-out 0s;
+}   
+.blog .element .card:hover {
+    border: 1px solid #007A5C;
+}
+.blog .element .card:hover img {
+    transform: scale(1.05);
+}
+.blog .element .card:hover h3 {
+    color: #007A5C;
+}
+.blog .element .card .image{
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+}    
+.blog .element .card .image img{
+    width: 100%;
+    height: inherit;
+    transition: all .4s ease-out 0s;
+}
+.blog .element .card .q {
+    padding: 35px 10px 25px 10px
+}
+.blog .element .card h3 {
+    color: #32404D;
+    font-weight: 600;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 15px;
+}
+.blog .element .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.blog .element .card a {
+    color: #007A5C;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+.blog .element .card a:hover {
+    color: #007A5C;
+    letter-spacing: 1px;
+}
+.visit {
+    display: flex;
+    background-color: rgb(242, 251, 249);
+    display: flex;
+    overflow: hidden;
+}
+.visit .text {
+    width: 74%;
+    padding: 20px 40px 20px 50px;
+    
+}
+.visit .text .tp {
+    margin-bottom: 40px;
+}
+.visit .text .tp h2 {
+    color: rgb(50, 64, 77);
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.visit .text .tp p {
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}    
+.visit .visit-team {
+    background-image: url(../images/visit1.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 752px;
+    width: 67%;
+}
+.visit .text .r1 {
+    transition: all .4s ease-out 0s;
+    background: none;
+    border: 1px solid rgba(93, 100, 106, 0.2);
+    padding: 30px 30px 10px 30px;
+    margin-bottom: 15px;
+}
+.visit .text .r1:hover {
+    background: rgba(0, 122, 92, 0.08);
+    border: 1px solid transparent;
+}
+.visit .text .r1 h3 {
+    transition: all .4s ease-out 0s;
+    color: #32404D;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-weight: 700;
+}
+.visit .text .r1:hover h3 {
+    color: #007A5C;
+}
+.visit .text .r1 p{
+    color: #32404D;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.visit .text .r1 a{
+    color: #007A5C;
+    background: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #007A5C;
+    transition: all .3s ease-out 0s;
+}    
+.visit .text .r1:hover a {
+    background-color: #007A5C;
+    color: white;
+}
+.offer {
+    padding: 100px 50px 100px 50px;
+}
+.offer .txt {
+    display: flex;
+    justify-content: space-between;
+}
+.offer .txt h2 {
+    color: #32404D;
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.offer .txt a {
+    color: #007A5C;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.offer .txt a>hr {
+    position: absolute;
+    content: "";
+    background: #007A5C;
+    width: 100%;
+    height: 2px;
+    margin-top: 2px;
+    border: none;
+}
+.offer .element {
+    display: flex;
+}
+.offer .element .card {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    transition: .2s ease-in;
+    text-align: center;
+}
+.offer .element .card .img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.offer .element .card .img img {
+    width: inherit;
+    height: inherit;
+    transition: .2s ease-in;
+}
+.offer .element .card h3>a{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: all .4s ease-out 0s;
+    line-height: 1.5;
+    font-family: "Chivo", sans-serif;
+    color: #32404D;
+    text-align: center;
+    margin-top: 0px;
+    font-style: normal;
+    text-decoration: none;
+}
+.offer .element .card h3>a:hover {
+    color: #007A5C;
+}
+.brand {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.brand .ext {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.brand .ext h2 {
+    color: #32404D;
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}    
+.brand .ext p {
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+.visitr {
+    background-color: #007A5C;
+    display: flex;
+    align-items: center
+}
+.visitr .team {
+    background-image: url(../images/visit2.jpg\ \(1\).webp);
+    background-color: #FFF6EE;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 628px;
+    width: 72%;
+}
+.visitr .wrapper {
+    position: relative;
+}
+.visitr .details {
+    width: 53%;
+    padding: 20px 40px 20px 80px;
+}
+.visitr .details .xt {
+    margin-bottom: 25px;
+}
+.visitr .details .xt h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.visitr .details .xt p{
+    color: #C9D6CB;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}    
+.visitr .details .xt a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+}
+.visitr .details .xt a:hover {
+    letter-spacing: 1px;
+}
+.footer-area {
+    background: #32404D;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.footer-area .row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-area .row .card {
+    padding: 0px 16px;
+}
+.footer-area .row .card .frst {
+    margin-bottom: 50px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}    
+a {
+    list-style: none;
+    text-decoration: none;
+}
+.footer-area .row .card .frst a{
+    color: #fff;
+    outline: medium none;
+}
+img {
+    vertical-align: middle;
+}
+.footer-area .row .card .frst h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.footer-area .row .card .frst li {
+    margin-bottom: 15px;
+}
+.footer-area .row .card .frst li a {
+    color: #a7aeb4;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .3s ease-out 0s;
+}
+.footer-area .row .card .frst li a:hover {
+    color: #007a5c;
+    text-decoration: underline;
+}
+.footer-area .row .card .frst .sign-up input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 0px;
+    color: #5C6168;
+    background: #fff;
 }
